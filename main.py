@@ -17,7 +17,7 @@ LOG_CHANNEL_ID = int(os.getenv("LOG_CHANNEL_ID"))
 
 API_URL = "https://cheapestsmmpanels.com/api/v2"
 SERVICE_ID = 3080
-QUANTITY = 100
+QUANTITY = 1000
 
 COOLDOWN_SECONDS = 300  # 30 mins
 
@@ -154,7 +154,7 @@ class OrderModal(Modal):
 
         self.amount = InputText(
             label="Amount",
-            value="100",
+            value="1000",
             required=True
         )
 
@@ -217,10 +217,10 @@ class OrderModal(Modal):
         # AMOUNT VALIDATION
         # =========================
 
-        if amount != "100":
+        if amount != "1000":
 
             await interaction.response.send_message(
-                "❌ Amount must be 100.",
+                "❌ Amount must be 1000.",
                 ephemeral=True
             )
 
