@@ -19,7 +19,7 @@ API_URL = "https://cheapestsmmpanels.com/api/v2"
 SERVICE_ID = 3080
 QUANTITY = 100
 
-COOLDOWN_SECONDS = 1800  # 30 mins
+COOLDOWN_SECONDS = 300  # 30 mins
 
 SETTINGS_FILE = "settings.json"
 COOLDOWN_FILE = "cooldowns.json"
